@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="stylish.css">
+  <title>Player Registration - Dream Hoop</title>
+</head>
+
+<body>
+
+  <section class="hero">
+    <nav>
+      <h1>Player Registration</h1>
+      <a href="index1.html">Home</a>
+      <a href="project1.1.html">Player Registration</a>
+      <a href="project1.2.html">Contact Us</a>
+    </nav>
+  </section>
+
+  <h2 class="title">Register to Join Dream Hoop</h2>
+
+  <section>
+    <div class="box">
+      <form id="registrationForm" method="post" enctype="multipart/form-data">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <div class="error" id="fnameError"></div>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <div class="error" id="lnameError"></div>
+
+        <label for="nationality">Nationality:</label><br>
+        <input type="text" id="nationality" name="nationality"><br>
+
+        <label for="height">Height (in cm):</label><br>
+        <input type="number" id="height" name="height"><br>
+        <div class="error" id="heightError"></div>
+
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <div class="error" id="emailError"></div>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="10" max="40" required><br>
+        <div class="error" id="ageError"></div>
+
+        <label for="id-picture">Upload ID Picture:</label><br>
+        <input type="file" id="id-picture" name="id-picture" accept="image/*" required><br><br>
+
+        <label for="position">Preferred Position:</label><br>
+        <select id="position" name="position" required>
+          <option value="">--Select Position--</option>
+          <option value="point-guard">Point Guard</option>
+          <option value="shooting-guard">Shooting Guard</option>
+          <option value="small-forward">Small Forward</option>
+          <option value="power-forward">Power Forward</option>
+          <option value="center">Center</option>
+        </select>
+
+        <textarea name="message" rows="10" cols="30">
+You have successfully registered, future rising star!!
+        </textarea><br>
+
+        <button type="button"
+          onclick="alert('A great journey is about to start for you, future rising star!!!')">Click me!</button><br><br>
+
+        <input type="submit" value="Submit Registration">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dream Hoop Basketball Recruitment</p>
+  </footer>
+
+  <!-- JS at the bottom -->
+  <script src="main.js"></script>
+</body>
+
+</html>
